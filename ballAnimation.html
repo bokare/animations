@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ball {
+            margin: 100px auto;
+            height: 100px;
+            width: 100px;
+            border: 2px solid red;
+            background-color: red;
+            border-radius: 50%;
+            animation-name: animatecolor;
+            animation-duration:1s;
+            animation-delay:3s;
+            animation-iteration-count: infinite;
+            animation-timing-function:ease-in;
+            position: relative;
+            animation-direction: alternate;
+        }
+
+        @keyframes animatecolor {
+            from {
+                top:0px
+
+            }
+
+            to {
+                top:200px;
+            }
+        }
+        .line{
+            border-bottom: 1px solid violet;
+            width: 200px;
+            margin: auto;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ball"></div>
+    <div class="line"></div>
+</body>
+
+</html>
+
+
